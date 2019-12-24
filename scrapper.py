@@ -101,4 +101,4 @@ if __name__=="__main__":
 session.commit()
 #closing DB session
 engine.dispose()
-print 'Data Fetching Done.'
+print('Data Fetching Done.')
