@@ -86,7 +86,7 @@ if __name__=="__main__":
 	s.get_data()
 	price_list= s.parse_price()
 	date_list = s.parse_date()
-	list_parts=list(itertools.izip_longest(*[iter(price_list)]*5))
+	list_parts=list(itertools.zip_longest(*[iter(price_list)]*5))
 	date_list = [str(x) for x in date_list]
 	
 	# creating DB engine and session(reuseable) to make bulk Entries
